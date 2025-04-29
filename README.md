@@ -35,7 +35,8 @@ admin.site.register(loan,loanadmin)
 ```
 # OUTPUT
 Include the screenshot of your admin page.
-![Screenshot 2025-04-29 120329](https://github.com/user-attachments/assets/ba2b5a93-21b3-4637-9058-5f6b23a9ee33)
+![Screenshot 2025-04-29 120742](https://github.com/user-attachments/assets/6f69917a-9c0d-404d-a46d-7880455a196f)
+
 
 
 # RESULT
