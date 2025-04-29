@@ -31,6 +31,7 @@ admins.py
 from django.contrib import admin
 from .models import loan,loanadmin
 admin.site.register(loan,loanadmin)
+```
 # OUTPUT
 Include the screenshot of your admin page.
 ![image](https://github.com/user-attachments/assets/e966d03b-feee-4e96-90c2-76fe1171688e)
