@@ -35,7 +35,8 @@ admin.site.register(loan,loanadmin)
 ```
 # OUTPUT
 Include the screenshot of your admin page.
-![image](https://github.com/user-attachments/assets/e966d03b-feee-4e96-90c2-76fe1171688e)
+![Screenshot 2025-04-29 120329](https://github.com/user-attachments/assets/ba2b5a93-21b3-4637-9058-5f6b23a9ee33)
+
 
 # RESULT
 Thus the program for creating a database using ORM hass been executed successfully
