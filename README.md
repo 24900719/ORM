@@ -2,10 +2,6 @@
 # Date:
 # AIM
 To develop a Django application to store and retrieve data from a bank loan database using Object Relational Mapping(ORM).
-![image](https://github.com/user-attachments/assets/50bbe1d1-fbd2-4889-b26f-c1f00366cef0)
-
-
-# ENTITY RELATIONSHIP DIAGRAM
 ## DESIGN STEPS
 ## STEP 1:
 Clone the problem from GitHub
@@ -20,22 +16,26 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 books
 
 # PROGRAM
-```
+.. admin.py
+
+from django.contrib import admin from .models import Employee,EmployeeAdmin admin.site.register(Employee,EmployeeAdmin)
+
 models.py
 
-from django.db import models from django.contrib import admin class loan (models.Model): loan_id=models.IntegerField(primary_key=True) loan_type =models.CharField(max_length=30) loan_amnt =models.FloatField() cust_acntno =models.IntegerField() cust_name=models.CharField(max_length=50)
+from django.db import models from django.contrib import admin
 
-class loanadmin(admin.ModelAdmin): list_display=('loan_id','loan_type','loan_amnt','cust_acntno','cust_name')
+class Employee(models.Model): eid = models.CharField(max_length=20,help_text="Employee") name = models.CharField(max_length=100) age = models.IntegerField() salary=models.IntegerField() email=models.EmailField()
 
-admins.py
+class EmployeeAdmin(admin.ModelAdmin): list_display=('eid','name','age','salary','email')
 
-from django.contrib import admin
-from .models import loan,loanadmin
-admin.site.register(loan,loanadmin)
-```
+...
+
+
+
 # OUTPUT
-Include the screenshot of your admin page.
-![Screenshot 2025-04-29 120742](https://github.com/user-attachments/assets/6f69917a-9c0d-404d-a46d-7880455a196f)
+![image](https://github.com/user-attachments/assets/2dc7e0b0-8d54-4f30-b966-18a838a60c13)
+![image](https://github.com/user-attachments/assets/6a94c3f5-e930-4363-afea-292828ae0650)
+![image](https://github.com/user-attachments/assets/459b78e2-3c23-4f61-b556-ad225ead4f85)
 
 
 
